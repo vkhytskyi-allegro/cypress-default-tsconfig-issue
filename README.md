@@ -25,7 +25,7 @@ error TS5091: Option 'preserveConstEnums' cannot be disabled when 'isolatedModul
 
 What happens is that `ts-node`, by default, uses the `tsconfig.json` (where `preserveConstEnums: false`) from the root of the project, not `cypress/tsconfig.json`, to transpile `cypress.config.ts`, though `tsconfig.json` was never ment to be used for such purpose.
 
-## The possible solution
+## A possible solution
 
 Provide a way to customize the path to `tsconfig.json` that is to be used by `ts-node` or, at least, enforce using `cypress/tsconfig.json`.
 
