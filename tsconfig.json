@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "es5",
     "module": "esnext",
     "lib": ["es5", "es2015", "dom"],
@@ -20,5 +21,8 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "cypress"
   ]
 }
