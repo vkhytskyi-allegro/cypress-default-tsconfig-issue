@@ -23,7 +23,7 @@ TSError: ⨯ Unable to compile TypeScript:
 error TS5091: Option 'preserveConstEnums' cannot be disabled when 'isolatedModules' is enabled.
 ```
 
-What happens is that `ts-node`, by default, uses the `tsconfig.json` (where `preserveConstEnums: false`) from the root of the project, not `cypress/tsconfig.json`, to transpile `cypress.config.ts`, though `tsconfig.json` was never ment to be used for such purpose.
+What happens is that `ts-node`, by default, uses the `tsconfig.json` (where `preserveConstEnums: false`) from the root of the project, not `cypress/tsconfig.json`, to transpile `cypress.config.ts`, though `tsconfig.json` was never meant to be used for such purpose.
 
 ## A possible solution
 
